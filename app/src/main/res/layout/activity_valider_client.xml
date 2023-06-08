@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".acitivities.validerclient">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/return1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/purple_700"
+        >
+
+        <ImageView
+            android:id="@+id/restohome5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="7dp"
+            android:src="@drawable/replay" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginVertical="10dp"
+                app:cardBackgroundColor="@color/purple_700"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/clients" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/refvc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:text="REF: 4086452"
+                            android:textColor="@color/purple_500"
+                            android:textSize="15dp"
+                            app:fontFamily="@font/hind_medium" />
+
+                        <TextView
+                            android:id="@+id/nomvc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:text="Nom: SARL Rajem plastique"
+                            android:textColor="@color/purple_500"
+                            android:textSize="15dp"
+                            app:fontFamily="@font/hind_medium" />
+
+                        <TextView
+                            android:id="@+id/adressevc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:text="https://goo.gl/maps/pBw1ekGNAgyegGgd7"
+                            android:textColor="@color/purple_500"
+                            android:textSize="15dp"
+                            app:fontFamily="@font/hind_medium" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Numero compteur : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/numcopmteur"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="NUM COMPTEUR"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Nouveau index : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/nouveauindex"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="INDEX NOUVEAU"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Ancien index : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/ancienindex"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="INDEX ANCIEN"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Total Tarif 1 : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/tottarif1"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="TARIF 1"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Total Tarif 2 : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/tottarif2"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="TARIF 2"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Total Tarif 3 : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/tottarif3"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="TARIF 3"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="P M A : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/pma"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="PMA"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Energie Réactif exporté : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/ere"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="ERE"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Energie Réactif importé : "
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:fontFamily="@font/hind_medium" />
+
+                <EditText
+                    android:id="@+id/eri"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext"
+                    android:hint="ERI"
+                    android:padding="5dp"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15dp"
+                    app:elevation="5dp" />
+
+            </LinearLayout>
+
+                <Button
+                android:id="@+id/valider_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider"
+                android:textSize="12dp"
+                android:background="@drawable/buttonbg"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+
+                <TextView
+                android:id="@+id/signaler"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signaler un probleme! "
+                android:textColor="@color/purple_500"
+                android:textSize="15dp"
+                app:fontFamily="@font/hind_medium" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
