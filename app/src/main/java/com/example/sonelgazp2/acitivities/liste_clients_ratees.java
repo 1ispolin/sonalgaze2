@@ -147,7 +147,7 @@ public class liste_clients_ratees extends AppCompatActivity implements RecyclerV
     @Override
     public void onItemClick(int postion) {
 
-        Intent intent=new Intent(liste_clients_ratees.this, validerclient.class);
+        Intent intent=new Intent(liste_clients_ratees.this, client_ratees.class);
         intent.putExtra("REF",clients.get(postion).getReference());
         intent.putExtra("NOM CLIENT",clients.get(postion).getNom_client());
         intent.putExtra("ADRESSE",clients.get(postion).getAdresse());

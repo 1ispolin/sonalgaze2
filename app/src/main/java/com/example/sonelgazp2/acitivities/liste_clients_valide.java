@@ -73,7 +73,7 @@ public class liste_clients_valide extends AppCompatActivity implements RecyclerV
 
 
 
-        Document queryFilter  = new Document("a", "").append("validation",true);
+        Document queryFilter  = new Document("a", "");
         RealmResultTask<MongoCursor<Document>> findTask = mongoCollection.find(queryFilter).iterator();
         findTask.getAsync(task -> {
             if (task.isSuccess()) {

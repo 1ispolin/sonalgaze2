@@ -136,7 +136,7 @@ public class liste_client_restant extends AppCompatActivity implements RecyclerV
         restohome2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(liste_client_restant.this, Principal_activity.class);
+                Intent intent=new Intent(liste_client_restant.this, validerclient.class);
                 startActivity(intent);
             }
         });

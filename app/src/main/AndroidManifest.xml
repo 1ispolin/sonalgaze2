@@ -12,6 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sonelgazp2">
+        <activity
+            android:name=".acitivities.client_ratees"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <!--
         <activity
             android:name=".client_valide"
@@ -19,7 +26,11 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>-->
+        </activity>
+        -->
+        <activity
+            android:name=".acitivities.client_valide"
+            android:exported="false" />
         <activity
             android:name=".acitivities.Principal_activity"
             android:exported="false" />

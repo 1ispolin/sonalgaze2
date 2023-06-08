@@ -104,13 +104,13 @@ public class validerclient extends AppCompatActivity {
                                 .append("num_copmteur",numcopmteur.getText().toString())
                                 .append("name",recieve.getStringExtra("NOM CLIENT"))
                                 .append("adresse","alger")
-                                .append("Date",20022)
+                                .append("Date","20022")
                                 .append("a","")
                                 .append("num_copmteur",numcopmteur.getText().toString());
 
 
                         Document queryFilterupdated =new Document()
-                                .append("ref",recieve.getIntExtra("REF",0000))
+                                .append("ref",recieve.getStringExtra("REF"))
                                 .append("name",recieve.getStringExtra("NOM CLIENT"))
                                 .append("adresse", "25415877")
                                 .append("num_compteur", "25415877")
