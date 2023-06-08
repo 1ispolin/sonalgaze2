@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,7 +22,7 @@ import io.realm.mongodb.mongo.MongoDatabase;
 
 public class client_valide extends AppCompatActivity {
 
-    TextView ENERGIE_REACTIF_EXPORTEE,Energie_Réactif_exporté,PMA,total_tarif_3,total_tarif_2,total_tarif_1,ancienindexval,nouveauindexval,nomval,adresseval,refval;
+    TextView ENERGIE_REACTIF_EXPORTEE,Energie_Réactif_IMPORTEE,PMA,total_tarif_3,total_tarif_2,total_tarif_1,ancienindexval,nouveauindexval,nomval,adresseval,refval;
     User user;
     MongoClient mongoClient;
     MongoDatabase mongoDatabase;
@@ -36,11 +34,11 @@ public class client_valide extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_valide);
+
+
         restohome7 = (ImageView) findViewById(R.id.restohome7);
-
-
         ENERGIE_REACTIF_EXPORTEE = (TextView) findViewById(R.id.ENERGIE_REACTIF_EXPORTEE);
-        Energie_Réactif_exporté = (TextView) findViewById(R.id.Energie_Réactif_exporté);
+        Energie_Réactif_IMPORTEE = (TextView) findViewById(R.id.Energie_Réactif_IMPORTEE);
         PMA = (TextView) findViewById(R.id.PMA);
         total_tarif_3 = (TextView) findViewById(R.id.total_tarif_3);
         total_tarif_2 = (TextView) findViewById(R.id.total_tarif_2);
@@ -68,17 +66,17 @@ public class client_valide extends AppCompatActivity {
             if (task.isSuccess()) {
                 Document doc1= task.get();
 
-                ENERGIE_REACTIF_EXPORTEE.setText(""+doc1.getString("ere"));
-                Energie_Réactif_exporté.setText(""+doc1.getString("eri"));
-                PMA.setText(""+doc1.getString("pma"));
-                total_tarif_3.setText(""+doc1.getString("totalt3"));
-                total_tarif_2.setText(""+doc1.getString("totalt2"));
-                total_tarif_1.setText(""+doc1.getString("totalt1"));
-                nouveauindexval.setText(""+doc1.getString("nouveau_index"));
-                ancienindexval.setText(""+doc1.getString("ancien_index"));
-                adresseval.setText(""+recieve.getStringExtra("ADRESSE"));
-                nomval.setText(""+recieve.getStringExtra("NOM CLIENT"));
-                refval.setText(""+recieve.getStringExtra("REF"));
+                ENERGIE_REACTIF_EXPORTEE.setText("ENERGIE REACTIF EXPORTEE : "+doc1.getString("ere"));
+                Energie_Réactif_IMPORTEE.setText("ENERGIE REACTIF IMPORTEE :  "+doc1.getString("eri"));
+                PMA.setText("PMA :  "+doc1.getString("pma"));
+                total_tarif_3.setText("TOTAL TARIF 3 :  "+doc1.getString("totalt3"));
+                total_tarif_2.setText("TOTAL TARIF 2 :  "+doc1.getString("totalt2"));
+                total_tarif_1.setText("TOTAL TARIF 1 :  "+doc1.getString("totalt1"));
+                nouveauindexval.setText("Nouveau index:  "+doc1.getString("nouveau_index"));
+                ancienindexval.setText("Ancien index:  "+doc1.getString("ancien_index"));
+                adresseval.setText("Adresse: "+recieve.getStringExtra("ADRESSE"));
+                nomval.setText("Nom:"+recieve.getStringExtra("NOM CLIENT"));
+                refval.setText("REF:"+recieve.getStringExtra("REF"));
 
 
 

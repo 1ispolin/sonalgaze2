@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="5dp"
-                    android:text="REF: 4086452"
+                    android:text="REF:"
                     android:textColor="@color/purple_500"
                     android:textSize="15dp"
                     app:fontFamily="@font/hind_medium" />
@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="5dp"
-                    android:text="Nom: SARL Rajem plastique"
+                    android:text="Nom: "
                     android:textColor="@color/purple_500"
                     android:textSize="15dp"
                     app:fontFamily="@font/hind_medium" />
@@ -80,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="5dp"
-                    android:text="Adresse: Beni Mered BLIDA"
+                    android:text="Adresse: "
                     android:textColor="@color/purple_500"
                     android:textSize="15dp"
                     app:fontFamily="@font/hind_medium" />
@@ -90,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="5dp"
-                    android:text="Ancien index: 459412 "
+                    android:text="Ancien index:  "
                     android:textColor="@color/purple_500"
                     android:textSize="15dp"
                     app:fontFamily="@font/hind_medium" />
@@ -100,7 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="5dp"
-                    android:text="Nouveau index: 464522 "
+                    android:text="Nouveau index:  "
                     android:textColor="@color/purple_500"
                     android:textSize="15dp"
                     app:fontFamily="@font/hind_medium" />
@@ -115,52 +115,57 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="5dp"
-            android:text="TOTAL TARIF 1 : 021543212 "
+            android:text="TOTAL TARIF 1 :  "
             android:textColor="@color/purple_500"
             android:textSize="15dp"
             app:fontFamily="@font/hind_medium" />
+
         <TextView
             android:id="@+id/total_tarif_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="5dp"
-            android:text="TOTAL TARIF 2 : 021543212 "
+            android:text="TOTAL TARIF 2 :  "
             android:textColor="@color/purple_500"
             android:textSize="15dp"
             app:fontFamily="@font/hind_medium" />
+
         <TextView
             android:id="@+id/total_tarif_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="5dp"
-            android:text="TOTAL TARIF 3 : 021543212 "
+            android:text="TOTAL TARIF 3 :  "
             android:textColor="@color/purple_500"
             android:textSize="15dp"
             app:fontFamily="@font/hind_medium" />
+
         <TextView
             android:id="@+id/PMA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="5dp"
-            android:text="PMA : 0212 "
+            android:text="PMA :  "
             android:textColor="@color/purple_500"
             android:textSize="15dp"
             app:fontFamily="@font/hind_medium" />
+
         <TextView
-            android:id="@+id/Energie_Réactif_exporté"
+            android:id="@+id/Energie_Réactif_IMPORTEE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="5dp"
-            android:text="ENERGIE REACTIF IMPORTEE : 22235 "
+            android:text="ENERGIE REACTIF IMPORTEE :  "
             android:textColor="@color/purple_500"
             android:textSize="15dp"
             app:fontFamily="@font/hind_medium" />
+
         <TextView
             android:id="@+id/ENERGIE_REACTIF_EXPORTEE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="5dp"
-            android:text="ENERGIE REACTIF EXPORTEE : 22235"
+            android:text="ENERGIE REACTIF EXPORTEE : "
             android:textColor="@color/purple_500"
             android:textSize="15dp"
             app:fontFamily="@font/hind_medium" />

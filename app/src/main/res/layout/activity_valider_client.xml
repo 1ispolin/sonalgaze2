@@ -65,7 +65,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="5dp"
-                            android:text="REF: 4086452"
+                            android:text="REF: "
                             android:textColor="@color/purple_500"
                             android:textSize="15dp"
                             app:fontFamily="@font/hind_medium" />
@@ -75,7 +75,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="5dp"
-                            android:text="Nom: SARL Rajem plastique"
+                            android:text="Nom: "
                             android:textColor="@color/purple_500"
                             android:textSize="15dp"
                             app:fontFamily="@font/hind_medium" />

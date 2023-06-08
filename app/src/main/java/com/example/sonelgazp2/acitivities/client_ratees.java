@@ -62,11 +62,11 @@ public class client_ratees extends AppCompatActivity {
             if (task.isSuccess()) {
                 Document doc1= task.get();
 
-                refval.setText(""+recieve.getStringExtra("REF"));
-                adresseval.setText(""+recieve.getStringExtra("ADRESSE"));
-                nomval.setText(""+recieve.getStringExtra("NOM CLIENT"));
-                type.setText(""+doc1.getString("Type"));
-                description.setText(""+doc1.getString("description"));
+                refval.setText("REF: "+recieve.getStringExtra("REF"));
+                adresseval.setText("Adresse: "+recieve.getStringExtra("ADRESSE"));
+                nomval.setText("Nom: "+recieve.getStringExtra("NOM CLIENT"));
+                type.setText("TYPE : "+doc1.getString("Type"));
+                description.setText("DESCRIPTION : "+doc1.getString("description"));
 
                 Log.v("EXAMPLE", "successfully found a document ");
             } else {
