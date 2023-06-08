@@ -8,6 +8,7 @@
     app:cardCornerRadius="15dp"
     app:cardElevation="4dp">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,6 +19,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/return1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/purple_700"
+            android:src="@drawable/replay" >
+
+            <ImageView
+                android:id="@+id/restohome7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/replay"
+                android:padding="7dp"/>
+
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"

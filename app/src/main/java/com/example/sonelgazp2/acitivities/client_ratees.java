@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,6 +26,7 @@ public class client_ratees extends AppCompatActivity {
     ImageView prblm_image;
     Intent recieve;
 
+    ImageView restohome6;
     User user;
     MongoClient mongoClient;
     MongoDatabase mongoDatabase;
@@ -37,6 +39,7 @@ public class client_ratees extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_ratees);
 
+        restohome6 = (ImageView) findViewById(R.id.restohome6);
         refval=(TextView) findViewById(R.id.refval);
         adresseval=(TextView) findViewById(R.id.adresseval);
         nomval=(TextView) findViewById(R.id.nomval);
@@ -72,6 +75,13 @@ public class client_ratees extends AppCompatActivity {
         });
 
 
+        restohome6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(client_ratees.this, liste_clients_ratees.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

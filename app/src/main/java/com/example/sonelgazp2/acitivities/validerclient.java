@@ -100,35 +100,23 @@ public class validerclient extends AppCompatActivity {
 
 
                         Document queryFilterupdate = new Document()
-                                .append("ref",recieve.getStringExtra("REF"))
-                                .append("num_copmteur",numcopmteur.getText().toString())
-                                .append("name",recieve.getStringExtra("NOM CLIENT"))
-                                .append("adresse","alger")
-                                .append("Date","20022")
-                                .append("a","")
-                                .append("num_copmteur",numcopmteur.getText().toString());
+                                .append("num_copmteur",numcopmteur.getText().toString()) ;
 
 
-                        Document queryFilterupdated =new Document()
-                                .append("ref",recieve.getStringExtra("REF"))
-                                .append("name",recieve.getStringExtra("NOM CLIENT"))
-                                .append("adresse", "25415877")
-                                .append("num_compteur", "25415877")
-                                .append("Date", "20020202")
-                                .append("a", "")
-                                .append("validation",true);
+                        Document queryFilterupdated =new Document().append("validation",true);
 
-                        mongoCollectionClient.updateOne(queryFilterupdate, queryFilterupdated).getAsync(task -> {
-                            if (task.isSuccess()) {
-                                long count = task.get().getModifiedCount();
-                                if (count == 1) {
-                                    Log.v("EXAMPLE", "successfully updated a document.");
-                                } else {
-                                    Log.v("EXAMPLE", "did not update a document.");
-                                }
-                            } else {
-                                Log.e("EXAMPLE", "failed to update document with: ", task.getError());
-                            }
+                        mongoCollectionClient.updateOne(queryFilterupdate, queryFilterupdated)
+                                .getAsync(task -> {
+                                    if (task.isSuccess()) {
+                                        long count = task.get().getModifiedCount();
+                                        if (count == 1) {
+                                            Log.v("EXAMPLE", "successfully updated a document.");
+                                        } else {
+                                            Log.v("EXAMPLE", "did not update a document.");
+                                        }
+                                    } else {
+                                        Log.e("EXAMPLE", "failed to update document with: ", task.getError());
+                                    }
                         });
 
 

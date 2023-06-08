@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.sonelgazp2.R;
@@ -29,10 +31,13 @@ public class client_valide extends AppCompatActivity {
     MongoCollection<Document> mongoCollection;
     App app;
     String appId = "sonalgazep-jjill";
+    ImageView restohome7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_valide);
+        restohome7 = (ImageView) findViewById(R.id.restohome7);
+
 
         ENERGIE_REACTIF_EXPORTEE = (TextView) findViewById(R.id.ENERGIE_REACTIF_EXPORTEE);
         Energie_Réactif_exporté = (TextView) findViewById(R.id.Energie_Réactif_exporté);
@@ -80,6 +85,14 @@ public class client_valide extends AppCompatActivity {
                 Log.v("EXAMPLE", "successfully found a document ");
             } else {
                 Log.e("EXAMPLE", "failed to find document with: ", task.getError());
+            }
+        });
+
+        restohome7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(client_valide.this, liste_clients_valide.class);
+                startActivity(intent);
             }
         });
 

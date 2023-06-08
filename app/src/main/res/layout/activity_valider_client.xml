@@ -120,6 +120,7 @@
                     android:background="@drawable/edittext"
                     android:hint="NUM COMPTEUR"
                     android:padding="5dp"
+                    android:inputType="number"
                     android:textColor="@color/purple_500"
                     android:textSize="15dp"
                     app:elevation="5dp" />
@@ -148,6 +149,7 @@
                     android:layout_height="35dp"
                     android:background="@drawable/edittext"
                     android:hint="INDEX NOUVEAU"
+                    android:inputType="number"
                     android:padding="5dp"
                     android:textColor="@color/purple_500"
                     android:textSize="15dp"
@@ -172,6 +174,8 @@
                     app:fontFamily="@font/hind_medium" />
 
                 <EditText
+                    android:inputType="number"
+
                     android:id="@+id/ancienindex"
                     android:layout_width="200dp"
                     android:layout_height="35dp"
@@ -201,6 +205,8 @@
                     app:fontFamily="@font/hind_medium" />
 
                 <EditText
+                    android:inputType="number"
+
                     android:id="@+id/tottarif1"
                     android:layout_width="200dp"
                     android:layout_height="35dp"
@@ -230,6 +236,8 @@
                     app:fontFamily="@font/hind_medium" />
 
                 <EditText
+                    android:inputType="number"
+
                     android:id="@+id/tottarif2"
                     android:layout_width="200dp"
                     android:layout_height="35dp"
@@ -259,6 +267,9 @@
                     app:fontFamily="@font/hind_medium" />
 
                 <EditText
+
+                    android:inputType="number"
+
                     android:id="@+id/tottarif3"
                     android:layout_width="200dp"
                     android:layout_height="35dp"
@@ -288,6 +299,8 @@
                     app:fontFamily="@font/hind_medium" />
 
                 <EditText
+                    android:inputType="number"
+
                     android:id="@+id/pma"
                     android:layout_width="200dp"
                     android:layout_height="35dp"
@@ -317,6 +330,8 @@
                     app:fontFamily="@font/hind_medium" />
 
                 <EditText
+                    android:inputType="number"
+
                     android:id="@+id/ere"
                     android:layout_width="200dp"
                     android:layout_height="35dp"
@@ -346,6 +361,8 @@
                     app:fontFamily="@font/hind_medium" />
 
                 <EditText
+                    android:inputType="number"
+
                     android:id="@+id/eri"
                     android:layout_width="200dp"
                     android:layout_height="35dp"
