@@ -66,7 +66,7 @@ public class liste_clients_affectes extends AppCompatActivity implements Recycle
          rvrestant.setAdapter(adapter);
 
 
-        Document queryFilter  = new Document().append("a", "");
+        Document queryFilter  = new Document().append("a", "").append("validation",true);
         RealmResultTask<MongoCursor<Document>> findTask = mongoCollection.find(queryFilter).iterator();
         findTask.getAsync(task -> {
             if (task.isSuccess()) {
@@ -92,7 +92,7 @@ public class liste_clients_affectes extends AppCompatActivity implements Recycle
         watcher.get(result -> {
             if (result.isSuccess()) {
 
-                Document queryFilter1  = new Document("a", "");
+                Document queryFilter1  = new Document("a", "").append("validation",true);
                 RealmResultTask<MongoCursor<Document>> findTask1 = mongoCollection.find(queryFilter1).iterator();
                 Handler handler = new Handler(Looper.getMainLooper());
 
