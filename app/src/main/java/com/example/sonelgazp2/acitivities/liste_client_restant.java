@@ -123,7 +123,6 @@ public class liste_client_restant extends AppCompatActivity implements RecyclerV
                         });
                     }
                 });
-
             }
             else {
                 Log.e("EXAMPLE_watcher", "failed to subscribe to changes in the collection with : ",
